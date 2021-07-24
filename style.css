@@ -1,30 +1,28 @@
 html {
   background-color: #bbbbbb;
-  padding: 0px;
 }
 
 body {
   width: 80%;
   min-height: calc(100vh - 4em);
   margin: 0 auto;
-  padding: 2em;
+  padding: 2rem;
   background-color: #dddddd;
   border-color: #eeeeee;
   border-left-style: solid;
   border-right-style: solid;
-  border-width: 20px;
+  border-width: 1.3rem;
 }
 
 p {
   color: #444444;
   font-family: 'Roboto', sans-serif;
-  font-size: 16pt;
-  line-height: 1;
-  margin: 4pt;
+  font-size: 1.2rem;
+  margin: 1rem auto;
 }
 
 p.question {
-  margin: 16pt auto;
+  margin: 1rem auto;
   color: #333333;
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
@@ -32,9 +30,9 @@ p.question {
   min-width: 500pt;
   min-height: 144pt;
   background-color: #eeeeee;
-  padding: 16pt;
-  border-radius: 16pt;
-  font-size: 36pt;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,20 +42,20 @@ p.question {
 h1 {
   color: #222222;
   font-family: 'Montserrat', sans-serif;
-  font-size: 72pt;
+  font-size: 6rem;
   text-align: center;
-  line-height: 72pt;
-  margin-top: 0pt;
-  margin-bottom: 0pt;
+  line-height: 6rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h2 {
   color: #333333;
   font-family: 'Montserrat', sans-serif;
-  font-size: 36pt;
-  line-height: 36pt;
-  margin-top: 12pt;
-  margin-bottom: 0pt;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 li {
@@ -77,17 +75,24 @@ a {
   background-color: #2196f3;
   font-family: 'Montserrat', sans-serif;
   border: none;
-  border-radius: 8pt;
+  border-radius: .5rem;
   color: white;
-  padding: 8pt;
+  padding: 1rem;
   width: 50%;
   min-width: 500pt;
-  text-align: center;
+  justify-content: center;
   text-decoration: none;
-  display: block;
-  font-size: 24pt;
-  margin: -2px auto;
+  display: flex;
+  font-size: 2.5rem;
+  margin: 1rem auto;
   cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #ddd;
+  border: .2rem solid #888;
+  color: #888;
+  cursor: not-allowed;
 }
 
 .button:hover, .button:focus {
@@ -138,16 +143,16 @@ a {
   background-color: #333;
   font-family: 'Montserrat', sans-serif;
   border: none;
-  border-radius: 8pt;
+  border-radius: .5rem;
   color: white;
-  padding: 8pt;
+  padding: .5rem;
   width: 10%;
   min-width: 100pt;
   text-align: center;
   text-decoration: none;
   display: block;
-  font-size: 18pt;
-  margin: -2px auto;
+  font-size: 1.3rem;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -158,26 +163,9 @@ a {
 .small_button_off {
   background-color: #ddd;
   color: #888;
-  border: 2px solid #888;
+  border: .2rem solid #888;
   cursor: not-allowed;
-  margin: -4px auto;
-}
-
-.button:disabled {
-  background-color: #ddd;
-  font-family: 'Montserrat', sans-serif;
-  border: 2px solid #888;
-  border-radius: 8pt;
-  color: #888;
-  padding: 8pt;
-  width: 50%;
-  min-width: 500pt;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 24pt;
-  margin: -2px auto;
-  cursor: not-allowed;
+  margin: 0 auto;
 }
 
 span.weight-300 {
@@ -185,12 +173,12 @@ span.weight-300 {
 }
 
 #banner {
-  border-color: #444444;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 8pt;
-  display: block;
-  margin: 8pt;
+  border-color: #444;
+  border-style: dashed;
+  border-width: .2rem;
+  border-radius: .5rem;
+  display: flex;
+  margin: 1rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50%;
@@ -208,15 +196,15 @@ span.weight-300 {
   }
 
   #svgHeader {
-    display: block !important;
+    display: flex;
   }
 
   .svgHeader {
     color: #222222;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: bold;
     text-anchor: middle;
   }
@@ -232,46 +220,6 @@ span.weight-300 {
     max-width: 100%;
     width: 100%;
     font-size: 1.5em;
-  }
-
-  .stronglyAgree {
-    background: #1b5e20;
-  }
-
-  .stronglyAgree:hover, .stronglyAgree:focus {
-    background: #154a19;
-  }
-
-  .agree {
-    background: #4caf50;
-  }
-
-  .agree:hover, .agree:focus {
-    background: #29942e;
-  }
-
-  .neutral {
-    background: #949494;
-  }
-
-  .neutral:hover, .neutral:focus {
-    background: #656565;
-  }
-
-  .disagree {
-    background: #f44336;
-  }
-
-  .disagree:hover, .disagree:focus {
-    background: #d6271a;
-  }
-
-  .stronglyDisagree {
-    background: #b71c1c;
-  }
-
-  .stronglyDisagree:hover, .stronglyDisagree:focus {
-    background: #a00e0e;
   }
 
   h2 {
