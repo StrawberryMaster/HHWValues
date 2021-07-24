@@ -23,11 +23,6 @@ p {
   margin: 4pt;
 }
 
-p.value-description {
-  text-indent: -16pt;
-  margin-left: 20pt;
-}
-
 p.question {
   margin: 16pt auto;
   color: #333333;
@@ -74,26 +69,12 @@ a {
   font-family: inherit;
 }
 
-img.center {
-  display: block;
-  margin: 1em auto;
-  width: 50%;
-  min-width: 500pt;
-}
-
 #svgHeader {
   display: none;
 }
 
-.selection {
-  background-color: #4caf50;
-}
-
-.num_input. .text-input, .button {
+.button {
   background-color: #2196f3;
-}
-
-.selection, .num_input, .text_input, .button {
   font-family: 'Montserrat', sans-serif;
   border: none;
   border-radius: 8pt;
@@ -153,10 +134,6 @@ img.center {
   background: #a00e0e;
 }
 
-.green_button {
-  background-color: #4caf50;
-}
-
 .small_button, .small_button_off {
   background-color: #333;
   font-family: 'Montserrat', sans-serif;
@@ -201,14 +178,6 @@ img.center {
   font-size: 24pt;
   margin: -2px auto;
   cursor: not-allowed;
-}
-
-div.text-wrapper {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36pt;
-  line-height: 36pt;
-  color: #222222;
-  display: inline-block;
 }
 
 span.weight-300 {
@@ -258,7 +227,7 @@ span.weight-300 {
     border-width: 1px;
   }
 
-  .button, .button:disabled, .text_input, .num_input, .selection {
+  .button, .button:disabled {
     min-width: 0;
     max-width: 100%;
     width: 100%;
