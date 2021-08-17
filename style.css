@@ -1,8 +1,10 @@
 html {
   background-color: #bbbbbb;
+  background: linear-gradient(rgba(26,24,135,1) 0%, rgba(145,122,114,1) 50%, rgba(255,212,94,1) 100%)
 }
 
 body {
+  background: url(//pages-themes.github.io/leap-day/assets/images/body-background.png);
   width: 80%;
   min-height: calc(100vh - 4em);
   margin: 0 auto;
