@@ -29,8 +29,8 @@ p.question {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   width: 70%;
-  min-width: 500pt;
-  min-height: 144pt;
+  min-width: 40rem;
+  min-height: 15rem;
   background-color: #eeeeee;
   padding: 1rem;
   border-radius: .5rem;
@@ -78,15 +78,15 @@ a {
   font-family: 'Montserrat', sans-serif;
   border: none;
   border-radius: .5rem;
-  color: white;
+  color: #fff;
   padding: 1rem;
   width: 50%;
-  min-width: 500pt;
+  min-width: 40rem;
   justify-content: center;
   text-decoration: none;
   display: flex;
   font-size: 2rem;
-  margin: 0 auto;
+  margin: -0.1rem auto;
   cursor: pointer;
 }
 
@@ -144,16 +144,16 @@ a {
 .small_button, .small_button_off {
   background-color: #333;
   font-family: 'Montserrat', sans-serif;
-  border: none;
+  border: .2rem solid #888;
   border-radius: .5rem;
-  color: white;
+  color: #fff;
   padding: .5rem;
   width: 10%;
-  min-width: 100pt;
+  min-width: 8rem;
   text-align: center;
   text-decoration: none;
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0 auto;
   cursor: pointer;
 }
