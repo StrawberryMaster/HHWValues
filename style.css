@@ -136,6 +136,12 @@ button,
   background: #1687e0;
 }
 
+.questionButtons button {
+  color: white;
+  width: 100%;
+  padding: 0.5em 0;
+}
+
 .stronglyAgree {
   background: #1b5e20;
 }
@@ -178,12 +184,9 @@ button,
 
 .small_button, .small_button_off {
   background-color: #333;
-  font-family: 'Montserrat', sans-serif;
   border: .2rem solid #888;
-  border-radius: .5rem;
   color: #fff;
   padding: .5rem;
-  width: 10%;
   min-width: 8rem;
   text-align: center;
   text-decoration: none;
