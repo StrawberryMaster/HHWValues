@@ -66,21 +66,16 @@ hr {
 }
 
 p.question {
-  margin: 1rem auto;
-  color: #333333;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
-  width: 70%;
-  min-width: 40rem;
-  min-height: 15rem;
-  background-color: #eeeeee;
-  padding: 1rem;
-  border-radius: .5rem;
-  font-size: 3em;
+  max-width: 640px;
+  min-height: 5.5em;
+  margin: 1em auto;
+}
+
+.description {
+  margin: 1.5em auto;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 a {
