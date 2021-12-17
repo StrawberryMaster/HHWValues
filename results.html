@@ -1,5 +1,6 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
   <link href='style.css' rel='stylesheet' type='text/css'>
   <title>HHWValues Results</title>
   <link rel="icon" type="x-icon" href="icon.png">
@@ -8,17 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-  <h1 class="title">HHWValues</h1>
-  <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 19">
-    <text x="50%" y="15" class="svgHeader">HHWValues</text>
-  </svg>
-  <hr>
-  <h1 class="title">Results</h1>
-  <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 19">
-    <text x="50%" y="15" class="svgHeader">Results</text>
-  </svg>
-
+  <body>
+    <header>
+      <div id="header">
+        <h1><a href="/">HHWValues</a></h1>
+      </div>
+    </header>
+    
   <img src="" id="banner"><br />
   <p style="text-align:center;margin:-2px auto">Hint: you can download this image directly. No need to screenshot!</p><br />
   <button class="button" onclick="location.href='index.html';">Back</button> <br>
@@ -46,13 +43,13 @@
         dot.fill();
         dot.stroke();
 
-        ctx.font = "50px Montserrat"
+        ctx.font = "50px Segoe UI"
         ctx.textAlign = "center"
         ctx.fillStyle = "#222222"
         ctx.fillText("Progressive / Traditional Axis (x): " + x_axis, 925, 1375)
         ctx.fillText("Lenient / Strict Axis (y): " + y_axis, 925, 1450)
         ctx.textAlign = "right"
-        ctx.font = "60px Montserrat"
+        ctx.font = "60px Segoe UI"
         ctx.fillText("strawberrymaster.github.io/HHWValues/", 1820, 1560)
 
         document.getElementById("banner").src = c.toDataURL();
@@ -61,3 +58,4 @@
     }
   </script>
 </body>
+</html>
