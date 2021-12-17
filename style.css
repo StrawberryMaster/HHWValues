@@ -65,7 +65,7 @@ hr {
   margin: 1em auto 2em;
 }
 
-p.question {
+.question {
   max-width: 640px;
   min-height: 5.5em;
   margin: 1em auto;
@@ -104,15 +104,12 @@ li {
   text-indent: 16pt;
 }
 
-#svgHeader {
-  display: none;
-}
-
 .navButtons {
   margin: 0 auto 1em;
   text-align: center;
   max-width: 400px;
 }
+
 button,
 .button {
   text-align: center;
@@ -208,10 +205,6 @@ button,
   margin: 0 auto;
 }
 
-span.weight-300 {
-  font-weight: 300;
-}
-
 #banner {
   border-color: #444;
   border-style: dashed;
@@ -229,24 +222,6 @@ span.weight-300 {
   body {
     width: auto;
     border-width: 0;
-  }
-
-  .title {
-    display: none;
-  }
-
-  #svgHeader {
-    display: flex;
-  }
-
-  .svgHeader {
-    color: #222222;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: bold;
-    text-anchor: middle;
   }
 
   #banner {
@@ -267,7 +242,7 @@ span.weight-300 {
     line-height: initial;
   }
 
-  p.question {
+  .question {
     min-height: 10rem !important;
     min-width: 0;
     max-width: 100%;
