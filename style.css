@@ -48,6 +48,7 @@ body {
   padding: 1em;
   border-bottom: 1em solid #cc0033;
 }
+
 #footer p {
   max-width: 640px;
   margin: 0 auto;
@@ -139,7 +140,7 @@ button,
 .questionButtons button {
   color: white;
   width: 100%;
-  padding: 0.5em 0;
+  padding: .5rem 0;
 }
 
 .stronglyAgree {
