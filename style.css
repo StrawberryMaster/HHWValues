@@ -221,36 +221,3 @@ button,
   max-width: 50%;
   min-width: 500pt;
 }
-
-@media screen and (orientation:portrait) {
-  body {
-    width: auto;
-    border-width: 0;
-  }
-
-  #banner {
-    min-width: 0;
-    max-width: 100%;
-    border-width: .1rem;
-  }
-
-  .button, .button:disabled {
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    line-height: initial;
-  }
-
-  .question {
-    min-height: 10rem !important;
-    min-width: 0;
-    max-width: 100%;
-    width: auto;
-    font-size: 2rem;
-  }
-}
