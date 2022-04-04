@@ -201,4 +201,31 @@ questions = [{
   "effects": {
     "strict": -0.5
   }      
+}, {
+  "id": 33,
+  "question": "Staff measures to control disruption in the chat do not go far enough.",
+  "effects": {
+    "strict": -0.5,
+    "right": -0.25
+  }      
+}, {
+  "id": 34,
+  "question": "Rules regarding what can be publicly sent from #staff and #administration should be less strict.",
+  "effects": {
+    "strict": -1.5
+  }
+}, {
+  "id": 35,
+  "question": "The moderator conduct policies should be more frequently enforced.",
+  "effects": {
+    "strict": 0.5,
+    "right": -0.5
+  }
+}, {
+  "id": 35,
+  "question": "Tickets and reports are an effective method of detecting incidents of rule-breaking behavior.",
+  "effects": {
+    "right": -0.5
+  }      
+  
 }];
