@@ -123,7 +123,8 @@ questions = [{
   "id": 20,
   "question": "People I dislike should be banned, even if they haven't violated any rules.",
   "effects": {
-    "right": -0.5
+    "right": -0.5,
+    "strict": 1
   }
 }, {
   "id": 21,
@@ -161,4 +162,41 @@ questions = [{
   "effects": {
     "right": -1
   }
+}, {
+  "id": 27,
+  "question": "Suicide and LGBTQ+ related jokes should be allowed in the server.",
+  "effects": {
+    "right": -1
+  }
+}, {
+  "id": 28,
+  "question": "The HHW Electoral College (HHW EC) should be abolished.",
+  "effects": {
+    "right": -0.5
+  }
+}, {
+  "id": 29,
+  "question": "We should create stricter policies for Discussions.",
+  "effects": {
+    "right": -0.5
+  }
+}, {
+  "id": 30,
+  "question": "Community consensus should help guide future staff decisions.",
+  "effects": {
+    "right": -0.5
+    "strict": -0.5
+  }
+}, {
+  "id": 31,
+  "question": "The current amournt of staff surveys is excessive and should be scaled back again to two surveys per year.",
+  "effects": {
+    "right": 0.5
+  }  
+}, {
+  "id": 32,
+  "question": "Long-time problematic users should have the ability to appeal their ban, even if they are likely to get banned after returning.",
+  "effects": {
+    "strict": -0.5
+  }      
 }];
