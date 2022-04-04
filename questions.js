@@ -9,6 +9,7 @@ questions = [{
   "question": "HHW should strongly encourage, or even require, users to support \"basin neutrality\".",
   "effects": {
     "right": -1
+    "strict": 0.5
   }
 }, {
   "id": 2,
@@ -63,7 +64,7 @@ questions = [{
   "id": 10,
   "question": "I support a 1-1-1-1-1 administration team.",
   "effects": {
-    "right": -1
+    "right": -1.5
   }
 }, {
   "id": 11,
@@ -93,7 +94,7 @@ questions = [{
   "id": 15,
   "question": "The fanfic era was good and should be revived.",
   "effects": {
-    "right": -1
+    "right": -1.5
   }
 }, {
   "id": 16,
@@ -166,7 +167,7 @@ questions = [{
   "id": 27,
   "question": "Suicide and LGBTQ+ related jokes should be allowed in the server.",
   "effects": {
-    "right": -1
+    "right": -1.5
   }
 }, {
   "id": 28,
@@ -179,6 +180,7 @@ questions = [{
   "question": "We should create stricter policies for Discussions.",
   "effects": {
     "right": -0.5
+    "strict": 1
   }
 }, {
   "id": 30,
