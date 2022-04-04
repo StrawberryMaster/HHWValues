@@ -8,7 +8,7 @@ questions = [{
   "id": 1,
   "question": "HHW should strongly encourage, or even require, users to support \"basin neutrality\".",
   "effects": {
-    "right": -1
+    "right": -1,
     "strict": 0.5
   }
 }, {
