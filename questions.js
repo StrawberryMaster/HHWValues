@@ -179,7 +179,7 @@ questions = [{
   "id": 29,
   "question": "We should create stricter policies for Discussions.",
   "effects": {
-    "right": -0.5
+    "right": -0.5,
     "strict": 1
   }
 }, {
