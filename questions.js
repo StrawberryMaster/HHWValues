@@ -184,7 +184,7 @@ questions = [{
   "id": 30,
   "question": "Community consensus should help guide future staff decisions.",
   "effects": {
-    "right": -0.5
+    "right": -0.5,
     "strict": -0.5
   }
 }, {
