@@ -8,7 +8,8 @@ questions = [{
   "id": 1,
   "question": "HHW should strongly encourage, or even require, users to support \"basin neutrality\".",
   "effects": {
-    "right": -1
+    "right": -1,
+    "strict": 0.5
   }
 }, {
   "id": 2,
@@ -178,7 +179,8 @@ questions = [{
   "id": 29,
   "question": "We should create stricter policies for Discussions.",
   "effects": {
-    "right": -0.5
+    "right": -0.5,
+    "strict": 0.5
   }
 }, {
   "id": 30,
@@ -198,5 +200,31 @@ questions = [{
   "question": "Long-time problematic users should have the ability to appeal their ban, even if they are likely to get banned after returning.",
   "effects": {
     "strict": -0.5
+  }      
+}, {
+  "id": 33,
+  "question": "Current staff measures to control disruption in the chat do not go far enough.",
+  "effects": {
+    "strict": -0.5,
+    "right": -0.25
+  }      
+}, {
+  "id": 34,
+  "question": "Rules regarding what can be publicly sent from #staff and #administration should be less strict.",
+  "effects": {
+    "strict": -0.5
+  }
+}, {
+  "id": 35,
+  "question": "The moderator conduct policies should be more frequently enforced.",
+  "effects": {
+    "strict": 0.5,
+    "right": -0.25
+  }
+}, {
+  "id": 35,
+  "question": "Tickets and reports are an effective method of detecting incidents of rule-breaking behavior.",
+  "effects": {
+    "right": -0.25
   }      
 }];
