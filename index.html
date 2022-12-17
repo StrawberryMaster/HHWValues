@@ -99,25 +99,7 @@
 
   <!-- This is the script for the page itself -->
   <script type="application/javascript" src="questions.js"></script>
-  <script type="text/javascript">
-    document.getElementById("numOfQuestions").innerHTML = questions.length;
-
-    window.onload = function () {
-      var background = new Image();
-      background.onload = function () {
-        var c = document.createElement("canvas");
-        c.width = 1850;
-        c.height = 1300;
-        var ctx = c.getContext("2d");
-        ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0, 0, 1850, 1300);
-        ctx.drawImage(background, 0, 0);
-
-        document.getElementById("banner").src = c.toDataURL();
-      }
-      background.src = "./compass.png";
-    }
-  </script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
