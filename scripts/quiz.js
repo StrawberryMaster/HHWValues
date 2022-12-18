@@ -13,14 +13,7 @@ let questionsOrder = Object.keys(questionsObject); // Array of shuffled question
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get("shuffle") === "true") {
-    shuffleArray(questionsOrder);
-}
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+    questionsOrder.sort(() => Math.random() - 0.5);
 }
 
 // Question initialization
