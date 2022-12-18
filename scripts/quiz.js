@@ -16,21 +16,25 @@ if (urlParams.get("shuffle") === "true") {
     questionsOrder.sort(() => Math.random() - 0.5);
 }
 
-// Question initialization
+// Cache DOM element references
+const questionTextElement = document.getElementById("question-text");
+const questionNumberElement = document.getElementById("question-number");
+const backButtonElement = document.getElementById("back_button");
+const backButtonOffElement = document.getElementById("back_button_off");
+
 initQuestion();
 
 function initQuestion() {
-    $("#question-text").html(questionsObject[questionsOrder[qn]].question);
-    $("#question-number").html(
-        `Question ${qn + 1} of ${questionsOrder.length}`
-    );
+    // Use cached element references and textContent property
+    questionTextElement.textContent = questionsObject[questionsOrder[qn]].question;
+    questionNumberElement.textContent = `Question ${qn + 1} of ${questionsOrder.length}`;
 
     if (Object.keys(answers).length === 0) {
-        $("#back_button").hide();
-        $("#back_button_off").show();
+        backButtonElement.style.display = "none";
+        backButtonOffElement.style.display = "block";
     } else {
-        $("#back_button").show();
-        $("#back_button_off").hide();
+        backButtonElement.style.display = "block";
+        backButtonOffElement.style.display = "none";
     }
 }
 
@@ -53,8 +57,8 @@ function nextQuestion(answer) {
 // Previous question
 function prevQuestion() {
     if (Object.keys(answers).length === 0) {
-        $("#back_button").hide();
-        $("#back_button_off").show();
+        backButtonElement.style.display = "none";
+        backButtonOffElement.style.display = "block";
         return;
     }
     qn--;
