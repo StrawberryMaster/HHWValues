@@ -30,7 +30,7 @@ function drawCanvas() {
     ctx.fillText("Progressive / Traditional Axis (x): " + xAxis, 925, 1375);
     ctx.fillText("Lenient / Strict Axis (y): " + yAxis, 925, 1450);
     ctx.textAlign = "right";
-    ctx.font = "6em Georgia, serif";
+    ctx.font = "5.75em Georgia, serif";
     ctx.fillText("strawberrymaster.github.io/HHWValues", 1820, 1560);
 
     bannerElement.src = canvasElement.toDataURL();
