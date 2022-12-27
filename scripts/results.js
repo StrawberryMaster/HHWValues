@@ -15,23 +15,29 @@ function drawCanvas() {
     const ctx = canvasElement.getContext("2d");
     ctx.fillStyle = "#EEEEEE";
     ctx.fillRect(0, 0, 1850, 1600);
-    ctx.drawImage(imageElement, 0, 0);
+    ctx.drawImage(imageElement, 0, 100);
+    
+    ctx.fillStyle = "#c03";
+    ctx.fillRect(0, 0, 1850, 100);
 
-    const dot = canvasElement.getContext("2d");
-    dot.beginPath();
-    dot.arc(425 + (1000 * (xAxis + 10) / 20), 1150 - (1000 * (yAxis + 10) / 20), 25, 0, 2 * Math.PI);
-    dot.fillStyle = 'red';
-    dot.fill();
-    dot.stroke();
+    ctx.fillStyle = "#fff";
+    ctx.textAlign = "left";
+    ctx.font = "5.75em Georgia, serif";
+    ctx.fillText("HHWValues", 30, 65);
+    ctx.textAlign = "right";
+    ctx.fillText("strawberrymaster.github.io/HHWValues", 1820, 65);
+
+    ctx.beginPath();
+    ctx.arc(425 + (1000 * (xAxis + 10) / 20), 1250 - (1000 * (yAxis + 10) / 20), 25, 0, 2 * Math.PI);
+    ctx.fillStyle = 'red';
+    ctx.fill();
+    ctx.stroke();
 
     ctx.font = "6em Georgia, serif";
     ctx.textAlign = "center";
     ctx.fillStyle = "#222222";
-    ctx.fillText("Progressive / Traditional Axis (x): " + xAxis, 925, 1375);
-    ctx.fillText("Lenient / Strict Axis (y): " + yAxis, 925, 1450);
-    ctx.textAlign = "right";
-    ctx.font = "5.75em Georgia, serif";
-    ctx.fillText("strawberrymaster.github.io/HHWValues", 1820, 1560);
+    ctx.fillText("Progressive / Traditional Axis (x): " + xAxis, 925, 1475);
+    ctx.fillText("Lenient / Strict Axis (y): " + yAxis, 925, 1550);
 
     bannerElement.src = canvasElement.toDataURL();
 }
