@@ -19,7 +19,7 @@ questions = [{
   }
 }, {
   "id": 3,
-  "question": "COPPA should not be followed.",
+  "question": "COPPA, which disallows users under 13 from joining the wiki, should not be followed.",
   "effects": {
     "right": -1
   }
@@ -56,7 +56,7 @@ questions = [{
   }
 }, {
   "id": 9,
-  "question": "HHW needs to move to Hypoverse or become independent from Fandom.",
+  "question": "HHW needs to move to an external site (in the mold of Hypoverse) or become independent from Fandom.",
   "effects": {
     "right": -1
   }
@@ -194,20 +194,20 @@ questions = [{
   "question": "The current amournt of staff surveys is excessive and should be scaled back again to two surveys per year.",
   "effects": {
     "right": 0.5
-  }  
+  }
 }, {
   "id": 32,
   "question": "Long-time problematic users should have the ability to appeal their ban, even if they are likely to get banned after returning.",
   "effects": {
     "strict": -0.5
-  }      
+  }
 }, {
   "id": 33,
   "question": "Current staff measures to control disruption in the chat do not go far enough.",
   "effects": {
     "strict": -0.5,
     "right": -0.25
-  }      
+  }
 }, {
   "id": 34,
   "question": "Rules regarding what can be publicly sent from #staff and #administration should be less strict.",
@@ -226,5 +226,85 @@ questions = [{
   "question": "Tickets and reports are an effective method of detecting incidents of rule-breaking behavior.",
   "effects": {
     "right": -0.25
-  }      
+  }
+}, {
+  "id": 36,
+  "question": "Certain group chats should not have any influence over staff decisions.",
+  "effects": {
+    "strict": -0.25,
+    "right": 0.5
+  }
+}, {
+  "id": 37,
+  "question": "The current staff team is unfairly biased against certain users because of their beliefs.",
+  "effects": {
+    "right": 0.5
+  }
+}, {
+  "id": 38,
+  "question": "Politics-related conversations do not belong in the wiki and/or server.",
+  "effects": {
+    "right": 0.25
+  }
+}, {
+  "id": 39,
+  "question": "The HHW Discord server needs more channels, even if there isn't a demand for it.",
+  "effects": {
+    "strict": -0.5
+  }
+}, {
+  "id": 39,
+  "question": "The HHW Discord server needs more channels, even if there isn't a demand for it.",
+  "effects": {
+    "right": -0.5,
+    "strict": -0.5
+  }
+}, {
+  "id": 40,
+  "question": "Appeals should be handled by an independent HHW Arbitration Committee, and not the administration.",
+  "effects": {
+    "right": 0.5,
+    "strict": 0.25
+  }
+}, {
+  "id": 41,
+  "question": "The administration should ask Fandom Staff to remove Discussions from the wiki.",
+  "effects": {
+    "right": -1,
+    "strict": 0.25
+  }
+}, {
+  "id": 41,
+  "question": "Former administration members should once again have an input in administration decisions.",
+  "effects": {
+    "right": 1,
+    "strict": -0.25
+  }
+}, {
+  "id": 42,
+  "question": "The strike system should be repealed, and punishments should be be determined on a case-by-case basis.",
+  "effects": {
+    "right": 0.5,
+    "strict": -0.25
+  }
+}, {
+  "id": 43,
+  "question": "HHW needs a community advisor to foster closer connections with the community.",
+  "effects": {
+    "right": -0.25,
+  }
+}, {
+  "id": 44,
+  "question": "User rights requirements are overly strict and should be relaxed.",
+  "effects": {
+    "strict": -0.25,
+    "right": -0.5
+  }
+}, {
+  "id": 45,
+  "question": "Users should be aware of each staff member's positions on administration votes.",
+  "effects": {
+    "strict": -0.25,
+    "right": -0.5
+  }
 }];
