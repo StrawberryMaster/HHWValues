@@ -250,12 +250,6 @@ questions = [{
   "id": 39,
   "question": "The HHW Discord server needs more channels, even if there isn't a demand for it.",
   "effects": {
-    "strict": -0.5
-  }
-}, {
-  "id": 39,
-  "question": "The HHW Discord server needs more channels, even if there isn't a demand for it.",
-  "effects": {
     "right": -0.5,
     "strict": -0.5
   }
