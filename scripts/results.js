@@ -7,7 +7,7 @@ canvasElement.width = 1850;
 canvasElement.height = 1600;
 
 const imageElement = new Image();
-imageElement.src = "./compass.png";
+imageElement.src = "./assets/compass.png";
 
 const bannerElement = document.getElementById("banner");
 

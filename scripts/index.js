@@ -14,7 +14,7 @@ function drawCanvas() {
     ctx.drawImage(background, 0, 0);
     document.getElementById("banner").src = c.toDataURL();
   };
-  background.src = "./compass.png";
+  background.src = "./assets/compass.png";
 }
 
 document.addEventListener("DOMContentLoaded", drawCanvas);
