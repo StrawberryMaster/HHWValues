@@ -232,7 +232,7 @@ questions = [{
   "question": "Certain group chats should not have any influence over staff decisions.",
   "effects": {
     "strict": -0.25,
-    "right": 0.5
+    "right": 1
   }
 }, {
   "id": 37,
@@ -276,7 +276,7 @@ questions = [{
   }
 }, {
   "id": 42,
-  "question": "The strike system should be repealed, and punishments should be be determined on a case-by-case basis.",
+  "question": "The strike system should be repealed, and punishments should be determined on a case-by-case basis.",
   "effects": {
     "right": 0.5,
     "strict": -0.25
@@ -299,6 +299,6 @@ questions = [{
   "question": "Users should be aware of each staff member's positions on administration votes.",
   "effects": {
     "strict": -0.25,
-    "right": -0.5
+    "right": -1
   }
 }];
