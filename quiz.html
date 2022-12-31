@@ -17,25 +17,25 @@
     </div>
   </header>
 
-  <div id="content">
+  <main>
     <div id="mainFrame">
       <h2 id="question-number">Loading...</h2>
       <div class="question">
         <p id="question-text"></p>
       </div>
-      <div class="navButtons questionButtons">
-        <button class="button stronglyAgree" onclick="nextQuestion( 1.0)">Strongly Agree</button> <br>
-        <button class="button agree" onclick="nextQuestion( 0.5)">Agree</button> <br>
-        <button class="button neutral" onclick="nextQuestion( 0.0)">Neutral/Unsure</button> <br>
-        <button class="button disagree" onclick="nextQuestion(-0.5)">Disagree</button> <br>
-        <button class="button stronglyDisagree" onclick="nextQuestion(-1.0)">Strongly Disagree</button> <br>
-        <button class="small_button" onclick="prevQuestion()" id="back_button">Back</button>
-        <button class="small_button_off" id="back_button_off">Back</button><br>
+      <nav class="navButtons questionButtons">
+        <button class="button stronglyAgree" aria-label="Strongly Agree" onclick="nextQuestion( 1.0)">Strongly Agree</button> <br>
+        <button class="button agree" aria-label="Agree" onclick="nextQuestion( 0.5)">Agree</button> <br>
+        <button class="button neutral" aria-label="Neutral" onclick="nextQuestion( 0.0)">Neutral/Unsure</button> <br>
+        <button class="button disagree" aria-label="Disagree" onclick="nextQuestion(-0.5)">Disagree</button> <br>
+        <button class="button stronglyDisagree" aria-label="Strongly Disagree" onclick="nextQuestion(-1.0)">Strongly Disagree</button> <br>
+        <button class="small_button" onclick="prevQuestion()" id="back_button" aria-label="Back">Back</button>
+        <button class="small_button_off" id="back_button_off" aria-label="Back">Back</button><br>
       </div>
-    </div>
-  </div>
+    </dsiv>
+  </main>
 
-  <div id="footer">
+  <footer>
     <p>
       8values, 9axes, SapplyValues and HHWValues are licensed under the Expat/MIT license. You can find a copy of the
       license <a href="https://strawberrymaster.github.io/HHWValues/LICENSE">here</a> or on the <a
@@ -43,7 +43,7 @@
         repo</a>.<br />
       This page's design was inspired on those of <a href="https://dbhq.github.io/">PolitiScales, DBHQ Edition</a>.
     </p>
-  </div>
+  </footer>
 
   <script src="./scripts/questions.js"></script>
   <script src="./scripts/quiz.js"></script>

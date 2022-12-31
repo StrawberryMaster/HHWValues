@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <title>HHWValues Results</title>
-  <link rel="icon" type="x-icon" href=".assets/icon.png">
-  <link rel="shortcut icon" type="x-icon" href=".assets/icon.png">
   <meta charset="utf-8">
+  <title>HHWValues Results</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./style.css" rel="stylesheet">
+  <link rel="icon" type="x-icon" href="./assets/icon.png">
+  <link rel="shortcut icon" type="x-icon" href="./assets/icon.png">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -17,22 +17,24 @@
     </div>
   </header>
 
-<div id="content">
-  <div id="mainFrame">
-    <h2>Results</h2>
-    <p class="simpleText">
-      The result of your HHWValues scale is decomposed in 2 values. Each axis
-      indicates your positioning compared with two opposed ideologies.
-    </p>
-  </div>
-</div>
+  <main>
+    <div id="mainFrame">
+      <h2>Results</h2>
+      <p class="simpleText">
+        The result of your HHWValues scale is decomposed in 2 values. Each axis
+        indicates your positioning compared with two opposed ideologies.
+      </p>
+    </div>
+  </main>
 
   <img src="" id="banner"><br />
-  <p style="text-align:center;margin:-2px auto">Hint: you can download this image directly. No need to screenshot!</p>
+  <p class="simpleText">Hint: you can download this image directly. No need to screenshot!</p>
   <br />
-  <button class="button" onclick="location.href='index.html';">Back</button><br>
+  <nav class="navButtons">
+    <button class="button" onclick="location.href='index.html';">Back</button>
+  </nav>
 
-  <div id="footer">
+  <footer>
     <p>
       8values, 9axes, SapplyValues and HHWValues are licensed under the Expat/MIT license. You can find a copy of the
       license <a href="https://strawberrymaster.github.io/HHWValues/LICENSE">here</a> or on the <a
@@ -40,8 +42,8 @@
         repo</a>.<br />
       This page's design was inspired on those of <a href="https://dbhq.github.io/">PolitiScales, DBHQ Edition</a>.
     </p>
-  </div>
-  
+  </footer>
+
   <script src="./scripts/results.js"></script>
 </body>
 

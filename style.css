@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --primary-color: #cc0033;
+}
 
 html,
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 #header {
-  background-color: #cc0033;
+  background-color: var(--primary-color, #c03);
   padding: 1.2em;
 }
 
@@ -45,17 +45,17 @@ body {
   text-decoration: none;
 }
 
-#content {
+main {
   flex-grow: 1;
   padding: 2rem 1rem 1rem;
 }
 
-#footer {
-  border-bottom: 1em solid #cc0033;
+footer {
+  border-bottom: 1em solid var(--primary-color, #c03);
   padding: 1em;
 }
 
-#footer p {
+footer p {
   margin: 0 auto;
   max-width: 640px;
 }
@@ -73,7 +73,7 @@ hr {
 }
 
 .question {
-  margin: 1em auto;
+  margin: 1rem auto auto;
   max-width: 640px;
   min-height: 5.5em;
 }
@@ -123,7 +123,7 @@ li {
 
 button,
 .button {
-  background-color: #cc0033;
+  background-color: var(--primary-color, #c03);
   border: none;
   border-radius: 3px;
   color: white;
@@ -131,10 +131,12 @@ button,
   display: inline-block;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1;
   margin: 0.5rem 0;
   padding: 0.5rem 1.5rem;
   text-align: center;
   text-decoration: none;
+  transition: 0.2s ease;
 }
 
 .button:disabled {
@@ -146,6 +148,11 @@ button,
 
 .button:hover, .button:focus {
   background: #1687e0;
+}
+
+.button:active {
+  background: #0f6cb0;
+  transform: translateY(.1rem);
 }
 
 .questionButtons button {
@@ -206,10 +213,15 @@ button,
   text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
+  transition: 0.2s ease;
 }
 
 .small_button:hover, .small_button:focus {
   background: #222;
+}
+
+.small_button:active {
+  transform: translateY(.1rem);
 }
 
 .small_button_off {

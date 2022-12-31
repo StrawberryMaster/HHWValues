@@ -2,12 +2,12 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <title>HHWValues Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="x-icon" href="./assets/icon.png">
   <link rel="shortcut icon" type="x-icon" href="./assets/icon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -17,20 +17,20 @@
     </div>
   </header>
 
-  <div id="content">
+  <main>
     <div id="mainFrame">
       <h2>Instructions</h2>
       <p class="question">You will be presented with a series of statements. For each one, click the button with your
         opinion on it.</p>
-      <div class="navButtons questionButtons">
+      <nav class="navButtons questionButtons">
         <button class="button" onclick="location.href='quiz.html?shuffle=true';">Proceed (Shuffled)</button><br>
         <button class="button" onclick="location.href='quiz.html?shuffle=false';">Proceed (Unshuffled)</button><br>
         <button class="button disagree" onclick="location.href='index.html';">Go Back</button><br>
-      </div>
     </div>
-  </div>
+    </div>
+  </main>
 
-  <div id="footer">
+  <footer>
     <p>
       8values, 9axes, SapplyValues and HHWValues are licensed under the Expat/MIT license. You can find a copy of the
       license <a href="https://strawberrymaster.github.io/HHWValues/LICENSE">here</a> or on the <a
@@ -38,7 +38,7 @@
         repo</a>.<br />
       This page's design was inspired on those of <a href="https://dbhq.github.io/">PolitiScales, DBHQ Edition</a>.
     </p>
-  </div>
+  </footer>
 
 </body>
 
