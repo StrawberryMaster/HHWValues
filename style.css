@@ -51,7 +51,7 @@ main {
 }
 
 footer {
-  border-bottom: 1em solid var(--primary-color, #c03);
+  border-bottom: 1rem solid var(--primary-color, #c03);
   padding: 1em;
 }
 
@@ -127,7 +127,7 @@ button,
   border: none;
   border-radius: 3px;
   color: white;
-  cursor: pointer;  
+  cursor: pointer;
   display: inline-block;
   font-size: 18px;
   font-weight: 400;
@@ -146,7 +146,8 @@ button,
   cursor: not-allowed;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background: #1687e0;
 }
 
@@ -165,7 +166,8 @@ button,
   background: #1b5e20;
 }
 
-.stronglyAgree:hover, .stronglyAgree:focus {
+.stronglyAgree:hover,
+.stronglyAgree:focus {
   background: #154a19;
 }
 
@@ -173,7 +175,8 @@ button,
   background: #4caf50;
 }
 
-.agree:hover, .agree:focus {
+.agree:hover,
+.agree:focus {
   background: #29942e;
 }
 
@@ -181,7 +184,8 @@ button,
   background: #949494;
 }
 
-.neutral:hover, .neutral:focus {
+.neutral:hover,
+.neutral:focus {
   background: #656565;
 }
 
@@ -189,7 +193,8 @@ button,
   background: #f44336;
 }
 
-.disagree:hover, .disagree:focus {
+.disagree:hover,
+.disagree:focus {
   background: #d6271a;
 }
 
@@ -197,11 +202,13 @@ button,
   background: #b71c1c;
 }
 
-.stronglyDisagree:hover, .stronglyDisagree:focus {
+.stronglyDisagree:hover,
+.stronglyDisagree:focus {
   background: #a00e0e;
 }
 
-.small_button, .small_button_off {
+.small_button,
+.small_button_off {
   background-color: #333;
   border: .2rem solid #888;
   color: #fff;
@@ -216,7 +223,8 @@ button,
   transition: 0.2s ease;
 }
 
-.small_button:hover, .small_button:focus {
+.small_button:hover,
+.small_button:focus {
   background: #222;
 }
 
@@ -242,4 +250,92 @@ button,
   margin-left: auto;
   margin-right: auto;
   max-width: 90vw;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background-color: #222;
+  }
+
+  a {
+    color: #dcd;
+  }
+
+  #header {
+    background-color: rgba(204, 0, 51, 0.9);
+  }
+
+  footer {
+    border-bottom-color: rgba(204, 0, 51, 0.9);
+  }
+
+  .button {
+    background-color: rgba(204, 0, 51, 0.9);
+  }
+
+  .button:hover,
+  .button:focus {
+    background: #1687e0;
+  }
+
+  .button:active {
+    background: #0f6cb0;
+  }
+
+  .stronglyAgree {
+    background: #1b5e20;
+  }
+
+  .stronglyAgree:hover,
+  .stronglyAgree:focus {
+    background: #154a19;
+  }
+
+  .agree {
+    background: #4caf50;
+  }
+
+  .agree:hover,
+  .agree:focus {
+    background: #29942e;
+  }
+
+  .neutral {
+    background: #949494;
+  }
+
+  .neutral:hover,
+  .neutral:focus {
+    background: #656565;
+  }
+
+  .disagree {
+    background: #f44336;
+  }
+
+  .disagree:hover,
+  .disagree:focus {
+    background: #d6271a;
+  }
+
+  .stronglyDisagree {
+    background: #b71c1c;
+  }
+
+  .stronglyDisagree:hover,
+  .stronglyDisagree:focus {
+    background: #a00e0e;
+  }
+
+  .small_button,
+  .small_button_off {
+    background-color: #333;
+    border: .2rem solid #888;
+  }
+
+  .small_button:hover,
+  .small_button:focus {
+    background: #222;
+  }
 }
