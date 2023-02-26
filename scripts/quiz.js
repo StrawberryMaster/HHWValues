@@ -22,6 +22,7 @@ const questionNumberElement = document.getElementById("question-number");
 const backButtonElement = document.getElementById("back_button");
 const backButtonOffElement = document.getElementById("back_button_off");
 
+// Initialize the first question
 initQuestion();
 
 function initQuestion() {
@@ -39,8 +40,8 @@ function initQuestion() {
 }
 
 // Next question
-function nextQuestion(answer) {
-    if (qn === questionsOrder.length) {
+const nextQuestion = answer => {
+    if (qn >= questionsOrder.length) {
         return;
     }
 
@@ -52,21 +53,20 @@ function nextQuestion(answer) {
     } else {
         results();
     }
-}
+};
 
 // Previous question
-function prevQuestion() {
+const prevQuestion = () => {
     if (Object.keys(answers).length === 0) {
-        backButtonElement.style.display = "none";
-        backButtonOffElement.style.display = "block";
+        backButtonElement.style.display = 'none';
+        backButtonOffElement.style.display = 'block';
         return;
     }
+
     qn--;
-
     delete answers[questionsOrder[qn]];
-
     initQuestion();
-}
+};
 
 // RESULTS
 function results() {
@@ -79,20 +79,15 @@ function results() {
     window.sessionStorage.percentages = JSON.stringify(pct);
 
     // Prepare the arguments for the next page
-    let args = '?';
-    const keys = Object.keys(pct);
-    for (let i = 0; i < keys.length; i++) {
-        const effectName = keys[i];
-        args += `${effectName}=${pct[effectName]}`;
-        if (i !== keys.length - 1) {
-            args += '&';
-        }
+    const args = new URLSearchParams();
+
+    for (const [effectName, value] of Object.entries(pct)) {
+        args.append(effectName, value);
     }
 
-    // Redirect to the next page
-    const hostname = window.location.hostname;
-    const nextPage = hostname === "strawberrymaster.github.io/HHWValues" ? "feedback.html" : "results.html";
-    location.href = nextPage + args;
+    const nextPage = "results.html";
+
+    window.location.href = nextPage + "?" + args.toString();
 }
 
 // Calculate percentage
@@ -102,28 +97,20 @@ function percentageCalculation() {
     const score = {}; // User scores
     const pct = {}; // Percentages/Score
 
-    // prepare
-    Object.keys(answers).forEach((id) => {
-        Object.keys(questionsObject[id].effects).forEach((effectName) => {
-            max[effectName] = 0;
-            score[effectName] = 0;
-        });
-    });
-
     // get max & scores
     Object.keys(answers).forEach((id) => {
         // dismiss "don't know"
         if (answers[id] !== null) {
             Object.keys(questionsObject[id].effects).forEach((effectName) => {
-                max[effectName] += Math.abs(questionsObject[id].effects[effectName]);
-                score[effectName] += answers[id] * questionsObject[id].effects[effectName];
+                max[effectName] = (max[effectName] || 0) + Math.abs(questionsObject[id].effects[effectName]);
+                score[effectName] = (score[effectName] || 0) + answers[id] * questionsObject[id].effects[effectName];
             });
         }
     });
 
     // calc score
     Object.keys(max).forEach((effectName) => {
-        pct[effectName] = (max[effectName] > 0 ? (score[effectName] * 10 / max[effectName]).toFixed(2) : 0);
+        pct[effectName] = (max[effectName] > 0 ? (score[effectName] / max[effectName] * 10).toFixed(2) : 0);
     });
 
     return pct;
