@@ -42,8 +42,4 @@ function drawCanvas() {
     bannerElement.src = canvasElement.toDataURL();
 }
 
-imageElement.onload = function () {
-    drawCanvas();
-};
-
-window.requestAnimationFrame(drawCanvas);
+imageElement.onload = () => window.requestAnimationFrame(drawCanvas);

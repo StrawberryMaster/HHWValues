@@ -1,5 +1,6 @@
 const numOfQuestionsElement = document.getElementById("numOfQuestions");
-numOfQuestionsElement.textContent = questions.length;
+const numOfQuestions = questionsOrder.length;
+numOfQuestionsElement.textContent = numOfQuestions;
 
 function drawCanvas() {
   const c = document.createElement("canvas");
