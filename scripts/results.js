@@ -23,9 +23,9 @@ function drawCanvas() {
     ctx.fillStyle = "#fff";
     ctx.textAlign = "left";
     ctx.font = "5.75em Georgia, serif";
-    ctx.fillText("HHWValues", 30, 65);
+    ctx.fillText("HHWValues", 30, 70);
     ctx.textAlign = "right";
-    ctx.fillText("strawberrymaster.github.io/HHWValues", 1820, 65);
+    ctx.fillText("strawberrymaster.github.io/HHWValues", 1820, 70);
 
     ctx.beginPath();
     ctx.arc(425 + (1000 * (xAxis + 10) / 20), 1250 - (1000 * (yAxis + 10) / 20), 25, 0, 2 * Math.PI);
