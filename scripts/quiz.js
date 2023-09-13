@@ -68,29 +68,20 @@ const prevQuestion = () => {
     initQuestion();
 };
 
-// RESULTS
+/** This will calculate the results of the quiz. **/
 function results() {
-    // Store the user's answers in session storage
-    window.sessionStorage.answers = JSON.stringify(answers);
-
-    // Calculate the final results
+    sessionStorage.setItem('answers', JSON.stringify(answers));
     const pct = percentageCalculation();
-    // Store the final results in session storage
-    window.sessionStorage.percentages = JSON.stringify(pct);
+    sessionStorage.setItem('percentages', JSON.stringify(pct));
 
-    // Prepare the arguments for the next page
     const args = new URLSearchParams();
-
-    for (const [effectName, value] of Object.entries(pct)) {
-        args.append(effectName, value);
-    }
+    Object.entries(pct).forEach(([effectName, value]) => args.append(effectName, value));
 
     const nextPage = "results.html";
-
-    window.location.href = nextPage + "?" + args.toString();
+    window.location.href = `${nextPage}?${args.toString()}`;
 }
 
-// Calculate percentage
+/** Calculates the percentages of each effect **/
 function percentageCalculation() {
     // calc max
     const max = {}; // Max possible scores
